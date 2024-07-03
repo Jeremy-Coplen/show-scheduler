@@ -18,7 +18,7 @@ export default function Layout() {
             <Stack.Screen 
             name="add"
             options={{
-                title: "Add",
+                title: "Add Show",
                 headerStyle: {
                     backgroundColor: "black",
                 },

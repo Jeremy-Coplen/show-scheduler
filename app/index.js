@@ -1,40 +1,42 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import { Link } from "expo-router"
 import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.week}>
-        <View style={styles.day}>
-          <Text style={styles.dayText}>Monday</Text>
-          <View style={styles.showsContainer}></View>
+      <ScrollView style={styles.scrollContent}>
+        <View style={styles.week}>
+          <View style={styles.day}>
+            <Text style={styles.dayText}>Monday</Text>
+            <View style={styles.showsContainer}></View>
+          </View>
+          <View style={styles.day}>
+            <Text style={styles.dayText}>Tuesday</Text>
+            <View style={styles.showsContainer}></View>
+          </View>
+          <View style={styles.day}>
+            <Text style={styles.dayText}>Wednesday</Text>
+            <View style={styles.showsContainer}></View>
+          </View>
+          <View style={styles.day}>
+            <Text style={styles.dayText}>Thursday</Text>
+            <View style={styles.showsContainer}></View>
+          </View>
+          <View style={styles.day}>
+            <Text style={styles.dayText}>Friday</Text>
+            <View style={styles.showsContainer}></View>
+          </View>
+          <View style={styles.day}>
+            <Text style={styles.dayText}>Saturday</Text>
+            <View style={styles.showsContainer}></View>
+          </View>
+          <View style={styles.day}>
+            <Text style={styles.dayText}>Sunday</Text>
+            <View style={styles.showsContainer}></View>
+          </View>
         </View>
-        <View style={styles.day}>
-          <Text style={styles.dayText}>Tuesday</Text>
-          <View style={styles.showsContainer}></View>
-        </View>
-        <View style={styles.day}>
-          <Text style={styles.dayText}>Wednesday</Text>
-          <View style={styles.showsContainer}></View>
-        </View>
-        <View style={styles.day}>
-          <Text style={styles.dayText}>Thursday</Text>
-          <View style={styles.showsContainer}></View>
-        </View>
-        <View style={styles.day}>
-          <Text style={styles.dayText}>Friday</Text>
-          <View style={styles.showsContainer}></View>
-        </View>
-        <View style={styles.day}>
-          <Text style={styles.dayText}>Saturday</Text>
-          <View style={styles.showsContainer}></View>
-        </View>
-        <View style={styles.day}>
-          <Text style={styles.dayText}>Sunday</Text>
-          <View style={styles.showsContainer}></View>
-        </View>
-      </View>
+      </ScrollView>
       <Link style={styles.text} href="/add">Add</Link>
       <StatusBar style="light" />
     </View>
@@ -77,5 +79,8 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontWeight: "700",
     fontSize: 20
+  },
+  scrollContent: {
+    width: "100%"
   }
 });
