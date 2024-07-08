@@ -35,6 +35,10 @@ export default function App() {
             <Text style={styles.dayText}>Sunday</Text>
             <View style={styles.showsContainer}></View>
           </View>
+          <View style={styles.day}>
+            <Text style={styles.dayText}>TBA</Text>
+            <View style={styles.showsContainer}></View>
+          </View>
         </View>
       </ScrollView>
       <Link style={styles.text} href="/add">Add</Link>
